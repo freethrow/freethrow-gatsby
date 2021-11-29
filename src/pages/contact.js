@@ -48,6 +48,8 @@ export default function Contact ({data}) {
                   <span class=" text-ft-dark">Full name</span>
                   <input
                     type="text"
+                    name="name"
+                    id="name"
                     class="
                       mt-0
                       block
@@ -64,6 +66,8 @@ export default function Contact ({data}) {
                   <span class="text-gray-700">Email address</span>
                   <input
                     type="email"
+                    name="email"
+                    id="name"
                     class="
                       mt-0
                       block
@@ -82,6 +86,8 @@ export default function Contact ({data}) {
                 <label class="block">
                   <span class="text-gray-700">Your message</span>
                   <textarea
+                    name="message"
+                    id="message"
                     class="
                       mt-0
                       block
