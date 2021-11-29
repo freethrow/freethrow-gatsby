@@ -41,58 +41,62 @@ export default function Contact ({data}) {
           <h2 class="text-2xl font-bold">Contact</h2>
           <div class="mt-8">
             <div class="grid grid-cols-1 gap-6 bg-ft-gray">
-              <label class="block">
-                <span class=" text-ft-dark">Full name</span>
-                <input
-                  type="text"
-                  class="
-                    mt-0
-                    block
-                    w-full
-                    px-0.5
-                    border-0 border-b-2 border-gray-200
-                    focus:ring-0 focus:border-black
-                    bg-ft-gray
-                  "
-                  placeholder="Cool name"
-                />
-              </label>
-              <label class="block">
-                <span class="text-gray-700">Email address</span>
-                <input
-                  type="email"
-                  class="
-                    mt-0
-                    block
-                    w-full
-                    px-0.5
-                    bg-ft-gray
-                    border-0 border-b-2 border-gray-200
-                    focus:ring-0 focus:border-black
-                  "
-                  placeholder="john@example.com"
-                />
-              </label>
-             
-          
+              <form name="contact" id="contact" method="post" netlify-honeypot="bot-field" data-netlify="true">
+                <input type="hidden" name="bot-field" />
+                <input type="hidden" name="form-name" value="contact" />
+                <label class="block">
+                  <span class=" text-ft-dark">Full name</span>
+                  <input
+                    type="text"
+                    class="
+                      mt-0
+                      block
+                      w-full
+                      px-0.5
+                      border-0 border-b-2 border-gray-200
+                      focus:ring-0 focus:border-black
+                      bg-ft-gray
+                    "
+                    placeholder="Cool name"
+                  />
+                </label>
+                <label class="block">
+                  <span class="text-gray-700">Email address</span>
+                  <input
+                    type="email"
+                    class="
+                      mt-0
+                      block
+                      w-full
+                      px-0.5
+                      bg-ft-gray
+                      border-0 border-b-2 border-gray-200
+                      focus:ring-0 focus:border-black
+                    "
+                    placeholder="john@example.com"
+                  />
+                </label>
               
-              <label class="block">
-                <span class="text-gray-700">Your message</span>
-                <textarea
-                  class="
-                    mt-0
-                    block
-                    w-full
-                    px-0.5
-                    bg-ft-gray
-                    border-0 border-b-2 border-gray-200
-                    focus:ring-0 focus:border-black
-                  "
-                  rows="2"
-                ></textarea>
-              </label>
-              <button class="bg-transparent hover:bg-ft-pink hover:text-white text-ft-dark py-2 px-4 border
-               border-ft-dark hover:border-transparent rounded">send</button>
+            
+                
+                <label class="block">
+                  <span class="text-gray-700">Your message</span>
+                  <textarea
+                    class="
+                      mt-0
+                      block
+                      w-full
+                      px-0.5
+                      bg-ft-gray
+                      border-0 border-b-2 border-gray-200
+                      focus:ring-0 focus:border-black
+                    "
+                    rows="2"
+                  ></textarea>
+                </label>
+                <button class="bg-transparent hover:bg-ft-pink hover:text-white text-ft-dark py-2 px-4 border
+                border-ft-dark hover:border-transparent rounded">send</button>
+               </form>
             </div>
           </div>
         </div>
