@@ -94,8 +94,13 @@ export default function Contact ({data}) {
                     rows="2"
                   ></textarea>
                 </label>
-                <button class="bg-transparent hover:bg-ft-pink hover:text-white text-ft-dark py-2 px-4 border
-                border-ft-dark hover:border-transparent rounded">send</button>
+                <div className="flex flex-col items-stretch">
+                <button class="bg-transparent flex-1 hover:bg-ft-pink hover:text-white text-ft-dark py-2 px-4 border
+                border-ft-dark hover:border-transparent rounded my-3" type="submit">send</button>
+
+              <button class="bg-transparent flex-1 hover:bg-ft-pink hover:text-white text-ft-dark py-2 px-4 border
+                border-ft-dark hover:border-transparent rounded my-3" type="reset">clear</button>
+                </div>
                </form>
             </div>
           </div>
