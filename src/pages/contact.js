@@ -41,7 +41,7 @@ export default function Contact ({data}) {
           <h2 class="text-2xl font-bold">Contact</h2>
           <div class="mt-8">
             <div class="grid grid-cols-1 gap-6 bg-ft-gray">
-              <form name="contact" id="contact" method="post" netlify-honeypot="bot-field" data-netlify="true">
+              <form name="contact" id="contact" method="post" netlify-honeypot="bot-field" data-netlify="true" value="contact">
                 <input type="hidden" name="bot-field" />
                 <input type="hidden" name="form-name" value="contact" />
                 <label class="block">
