@@ -1,25 +1,15 @@
-import React, {useState} from 'react'
+import React from 'react'
 import {Link} from 'gatsby'
 
 
 
 const Navbar = () => {
 
-    const [colorChange, setColorchange] = useState(false);
-    const changeNavbarColor = () =>{
-     if(window.scrollY >= 60){
-     
-       setColorchange(true);
-     }
-     else{
-       setColorchange(false);
-     }
-  };
-  window.addEventListener('scroll', changeNavbarColor);
+   
 
 
     return (
-        <div className={colorChange?"container mx-auto sticky top-0 z-50 bg-ft-gray":"container mx-auto sticky top-0 z-50"}>
+        <div className={"container mx-auto sticky top-0 z-50 bg-ft-gray"}>
         <div className=" my-4 flex flex-col md:flex-row justify-between font-playFair text-ft-dark content-center">
             
         <Link to="/">
