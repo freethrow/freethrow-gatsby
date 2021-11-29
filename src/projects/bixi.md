@@ -1,9 +1,12 @@
 ---
 title: Evil Pippen
-description: CSS JS
+description: Simple REST API
 slug: project-two
 thumb: ../images/thumbs/foreing1.png
 featured: ../images/featured/basket1.jpg
+tech: A really complex FASTApi api coupled with a React frontend.
+github: https://github.com/freethrow/Belgrade-real-estate
+date: 23/12/2021
 ---
 
 ## Some title Pippens

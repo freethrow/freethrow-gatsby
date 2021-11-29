@@ -4,6 +4,9 @@ description: CSS HTML
 slug: project-one
 thumb: ../images/thumbs/fiba1.png
 featured: ../images/featured/fiba2.png
+tech: python
+github: https://github.com/freethrow/Belgrade-real-estate
+date: 13/07/2020
 ---
 
 ## Some title

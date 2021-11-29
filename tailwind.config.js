@@ -6,10 +6,22 @@ module.exports = {
       padding: '2rem',
       center:true
     },
-    extend: {},
+    extend: {
+      colors:{
+        'ft-gray':'#E8EAE3',
+        'ft-dark':'#373833',
+        'ft-pink':'#FA2742'
+      },
+      fontFamily:{
+        'poppins':['Poppins','sans-serif'],
+        'playFair':['"Playfair Display"', 'sans-serif']
+      }
+    },
   },
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms')
+  ],
 }

@@ -4,14 +4,20 @@ exports.createPages = async ({graphql, actions}) => {
 
     const {data} = await graphql(`
     query Projects {
-        allMarkdownRemark {
-          nodes {
-            frontmatter {
-              slug
-            }
+      allMarkdownRemark {
+        nodes {
+          frontmatter {
+            slug
           }
         }
       }
+      allContentfulArticle {
+        nodes {
+          slug
+        }
+      }
+    }
+    
       
     `)
 
@@ -23,5 +29,15 @@ exports.createPages = async ({graphql, actions}) => {
         })
         
     });
+
+    data.allContentfulArticle.nodes.forEach(node => {
+      console.log("processing article:", node.slug)
+      actions.createPage({
+          path:'/articles/'+node.slug,
+          component:path.resolve('./src/templates/article-details.js'),
+          context:{slug:node.slug}
+      })
+      
+  });
 
 }

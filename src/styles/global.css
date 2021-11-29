@@ -1,3 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+
+    body {
+      @apply font-poppins;
+      @apply text-ft-dark;
+    }
+
+    p {    
+      @apply font-light;
+    }
+
+    h2{
+      @apply text-ft-pink font-playFair my-3 text-xl font-bold;
+    }
+
+    .project a{
+      @apply border-b-2 border-ft-pink;
+    }
+
+    .project p{
+      @apply my-5;
+    }
+
+    .project h3{
+      @apply text-ft-pink font-playFair my-3 text-xl;
+    }
+
+    .about p{
+      @apply my-4;
+
+    }
+
+    .project img{
+      @apply p-4 my-3 bg-white text-center mx-auto;
+    }
+
+
+  }
+
